@@ -4,59 +4,159 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Kevin's Website</title>
+    <meta
+      name="description"
+      content="The best place to learn who Kevin Lutz is"
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kevin's Portfolio</title>
   </head>
   <body>
-    <script src="script.js"></script>
-    <header class="main-header">
-        <nav>
-            <h1 id='my-name'></h1>
-            <ul class=nav-links'>
-                <li><a href='home' class='link'>Home</a></li>
-                <li><a href='porfolio' class='link'>Portfolio</a></li>
-                <li><a href='about' class='link'>About</a></li>
-                <li><a href='contact' class='link'>Contact</a></li>
-            </ul>
-        </nav>
+    <header class="main-head">
+      <nav>
+        <h1 id='logo'>Kevlar</h1>
+        <ul class='nav-links'>
+          <li><a href='#shop' class='cool-link'>About</li>
+          <li><a href='#rentals' class='cool-link'>Languages</li>
+            <li><a href='#workflow' class='cool-link'>Tools</li>  
+          <li><a href='#lessons' class='cool-link'>Portfolio</li>
+          <li><a href='#contact' class='cool-link'>Contact</li>
+        </ul>
+      </nav>
     </header>
-   
+
     <main>
-        <section class='hero'>
-            <div class="hero-text">
-                <h2>Hello, I'm Kevin</h2>
-                <p>Self-taught programmer</p>
+      <section class='hero'>
+        <div class="hero-introduction flex">
+          <h2>Hey I'm Kevin,</br>a self-taught coder.</h2>
+          <p>Becoming a computer programmer was a dream of mine for several years. In December of 2019 I decided to make the jump and dive in head first. Making my first keystroke was so exciting, and I've never looked back!</p>
+          <a class='booklesson' href='#lessons'>View Timeline</a>
+        </div>
+        <div class="hero-images">
+          <img class='surfer-girl' src='images/herophoto.jpg' alt='Surfer girl riding a wave'/>
+        </div>
+      </section>
+
+      <section class="workflow" id='workflow'>
+        <div class="rentals-image">
+          <h5><br/>Keep Calm<br/><br/>And<br/><br/>Code On</h5>
+          <img class='surfboards' src='images/karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg' alt='samsung monitor' />
+        </div>
+        <div class="rentals-text flex">
+          <div class="rentals-small">
+            <h3>My Workflow Tools</h3>
+            </br>
+            <p class='board-rental'>2020 MacBook Pro 15"</p>
+            <p class='rental-rates'>Fast. Powerful. User-friendly.</br> Super portable - Travels with me easily.</p>
+          </div>
+          <div class="rentals-medium">
+            <p class='board-rental'>Samsung G9 Odyssey</p>
+            <p class='rental-rates'>This is wonderful for productivity and easy on the eyes. No need to adjust window sizes or fight for monitor real estate - everything fits perfectly.</p>
+          </div>
+          <div class="rentals-large">
+            <p class='board-rental'>Sit/Stand Desk</p>
+            <p class='rental-rates'>Sitting is the new smoking. My motorized desk with preset heights for both sitting and standing helps the blood flow and muscles from tightening</p>
+          </div>
+          <div class="rentals-large">
+            <p class='board-rental'>Kinesis Freestyle2 Keyboard</p>
+            <p class='rental-rates'>Ergonomics is super important for longevity. Prevent your forearms from pronating which cases fatigue. Help yourself concentrate better and code longer.</p>
+          </div>
+          <div class="rentals-large">
+            <p class='board-rental'>ChillHop YouTube Station</p>
+            <p class='rental-rates'>Chillhop keeps the vibes up and the stress down. Maintaining a peaceful state of mind helps to stay focused to write better code.</p>
+          </div>
+          <div>
+            <a class='rentnow' href='#rentals'>Shop My Amazon List</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="shop" id='shop'>
+          <img class="shop1" src="images/pexels-marc-mueller-325111.jpg" alt='laptop with code'/>
+          <img class="shop2" src="images/pexels-olia-danilevich-4974913.jpg" alt='fingers typing on keyboard'/>
+          <img class="shop3" src="images/pexels-negative-space-34578.jpg" alt='laptop and notepad'/>
+          <img class="shop4" src="images/artem-sapegin-ZMraoOybTLQ-unsplash.jpg" alt='laptop and coffee cup'/>
+          <div class="shop5 flex">
+            <div>
+              <h2>Languages</h2>
+              <p class='sale'>Front and Backend</p>
             </div>
-            <div class="hero-image">
-                <img class='coder' src='' alt="Photo of a coder"/>
+            <div>
+              <h1>JavaScript</h1>
             </div>
-        </section>
-        <section class='portfolio'>
-            <div class="portfolio-summary">
-                <h2>Here are a few projects that I built out</h2>
+            <div>
+              <h1>Ruby & Rails</h1>
             </div>
-            <div class="portfolio-cards">
-                <img src="" class='card' alt='memory game'/>
-                <img src="" class='card' alt='react component'/>
-                <img src="" class='card' alt='to do list'/>
-                <img src="" class='card' alt='surf website'/>
+            <div>
+              <h1>SQL</h1>
             </div>
-        </section>
-        <section>
-            <div class="contact">
-                <h1>Feel Free To Contact Me</h1>
-                <img src="" class='headshot' alt='photo of kevin'/>
+            <div>
+                <h1>HTML5 & CSS3</h1>
             </div>
-            <div class="contact-info">
-                <h2>email</h2>
-                <h2>phone</h2>
-                <h2>instagram</h2>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+     
+      <section>
+        <div class="shop" id='shop'>
+          <img class="shop1" src="images/pragmaticstudio.png" alt='pragmatic studio logo'/>
+          <img class="shop2" src="images/executeprogram.png" alt='execute program logo'/>
+          <img class="shop3" src="images/htmlCSS.png" alt='html and css logo'/>
+          <img class="shop4" src="images/freecodecamp.png" alt='free code camp logo'/>
+          <img class="shop5 flex" src='images/codecademy.png' alt='codecademy logo'>
+        </div>
+      </section>
+
+
+
+      <section class="lessons" id='lessons'>
+
+        <div class="lessons-text flex">
+          <div>
+            <h2 class='learntosurf'>Learn 2 Surf</h2>
+          </div>
+          
+          <div>
+            <h3>ToDo List</h3>
+            <p class='lesson-description'>Whether it's your first time on a surfboard or you're looking to up your game, we can tailor lessons specifically to your needs. </br>Our instructors are certified & world-class, excellent at making anyone feel comfortable and have fun while learning to surf.</p>
+          </div>
+          <div>
+            <h3>Memory Game</h3>
+            <p  class='lesson-description'>This is a great game to learn about state.</br> The surfing community is filled with good vibes, and surfers are always eager to help a fellow dude or dudette.</p>
+          </div>
+          <div>
+            <h3>React Components</h3>
+            <p class='lesson-description'>This is a great way to learn about mapping through data, and then using that date to create a unique component instance. </br> Let us know how we can accommodate and we'll do our very best. Almost nothing can stop you from enjoying a tubular ride.</p>
+          </div>
+         
+        </div>
+
+        <div class="lessons-image">
+          <img src='images/goran-ivos-TorAcb4AQRc-unsplash.jpg' alt='laptop and coffee' />
+        </div>
+
+      </section>
+      <section>
+        <footer class='footer' id='contact'>
+          <div class="linkedin">
+            <a href='#'><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="instagram">
+            <a href='#'><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="website">
+            <a href='#'><i class="far fa-window-maximize"></i></a>
+          </div>
+        </footer>
+      </section>
 
     </main>
-
-
-
   </body>
 </html>
